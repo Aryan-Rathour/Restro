@@ -1,0 +1,17 @@
+import { useRouter } from "expo-router";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import logo from '../assets/images/dinetimelogo.png'
+
+export default function Index() {
+  const router = useRouter()
+  return (
+    <SafeAreaView className={`bg-[#2b2b2b]`}>
+      <ScrollView contentContainerStyle={{height:"100%"}}>
+        <View>
+          <Image source={logo} style={{width:300 , height:300}} />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+} 
