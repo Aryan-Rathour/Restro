@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Restro",
-    "slug": "Restro",
+    "name": "myrestro",
+    "slug": "myrestro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "restro",
+    "scheme": "myrestro",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
