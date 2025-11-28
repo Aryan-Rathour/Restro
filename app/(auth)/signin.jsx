@@ -8,7 +8,7 @@ import entryImg from '../../assets/images/Frame.png';
 import validationSchema from "../../utils/authSchema";
 
 const Signup = () => {
-    const router = useRouter()
+    const router = useRouter() 
 
     const handleSignup = () => {
 
@@ -38,7 +38,7 @@ const Signup = () => {
                                     </View>
                                     <TouchableOpacity onPress={handleSubmit} style={{ marginTop: 32, padding: 12, marginVertical: 8, backgroundColor: "#f49b33", borderRadius: 6 }}>
                                         <Text style={{ fontSize: 15, textAlign: "center", fontWeight: "bold", color: "black" }}>
-                                            Sign Up
+                                            Sign in
                                         </Text>
 
                                     </TouchableOpacity>
@@ -48,9 +48,9 @@ const Signup = () => {
 
                     </View>
 
-                    <TouchableOpacity onPress={() => router.push("/signin")} style={{ flexDirection: "row", alignItems: "center", marginVertical: 12 }}>
-                        <Text style={{ color: "white", fontWeight: "600" }}>Already a user? </Text>
-                        <Text style={{ color: "#f49b33", textDecorationLine: "underline" }}>Sign in</Text>
+                    <TouchableOpacity onPress={() => router.push("/signup")} style={{ flexDirection: "row", alignItems: "center", marginVertical: 12 }}>
+                        <Text style={{ color: "white", fontWeight: "600" }}>New User? </Text>
+                        <Text style={{ color: "#f49b33", textDecorationLine: "underline" }}>Sign Up</Text>
                     </TouchableOpacity>
 
                 </View>
@@ -81,8 +81,6 @@ const Signup = () => {
                         <Text style={{ color: "#f49b33", textDecorationLine: "underline" }}>Guest User</Text>
                     </TouchableOpacity>
                 </View>
-
-
 
                 <View style={{ flex: 1 }}>
                     <Image source={entryImg} style={{ width: "100%", height: "100%" }} resizeMode="contain" />
